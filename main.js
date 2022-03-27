@@ -17,4 +17,6 @@ application.get('/select_menu', (req, res) => {
 
 const userRouter = require('./routes/users.js')
 application.use('/users', userRouter)
-application.listen(3214)
+
+const port = process.env.PORT || 3214;
+application.listen(port)
