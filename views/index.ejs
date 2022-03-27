@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Browser Game</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <audio controls autoplay>
+        <source src="https://cdn.discordapp.com/attachments/864236743888601098/947891846976245820/battleog.mp3"
+            type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h1>Pokémon Browser Game 1.0</h1>
+    <img
+        src="https://cdn.discordapp.com/attachments/864236743888601098/947649827586592818/tumblr_ec522f2b7c02a252316953dd86c8be3b_5119dfa9_500.gif" />
+    <p>Hello there! Welcome to the world of Pokémon! My name is Oak! People call me the Pokémon Prof!</p>
+    <p>This world is inhabited by creatures called Pokémon! For some people, Pokémon are pets.</p>
+    <p>Other use them for fights. Myself… I study Pokémon as a profession. First, what is your name?</p>
+    <form><input id="playername" type="text" class="username" placeholder="Enter your name"></input></form>
+    <a><button onclick="unhide()">Confirm</button></a>
+    <script src="/logic.js"></script>
+    <div id="prompt2" style="display: none">
+        <img src="https://cdn.discordapp.com/attachments/527910583295803396/955907551952773220/359px-Lets_Go_Pikachu_Eevee_Blue.png"
+            height="200px">
+        <p>Right! Well, this is my grandson. He's been your rival
+            since you were a baby. …Erm,
+            what
+            is
+            his name again? </p>
+        <input id="rivalname" type="text" class="rivname" placeholder="Enter your rival's name"></input>
+        <a><button onclick="unhide()">Confirm</button></a>
+    </div>
+    <div id="prompt3" style="display: none">
+        <p>That's right! I remember now! Your very own Pokémon legend is about to unfold!
+            A
+            world of dreams and adventures with Pokémon awaits! Let's go!</p>
+        <a href="./select_menu"><button>Start adventure</button></a>
+    </div>
+
+</body>
+
+</html>

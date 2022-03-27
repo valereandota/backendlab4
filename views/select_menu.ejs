@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Starter Selection</title>
+</head>
+
+<body>
+    <h1>Pokémon Web Browser Starter Selection</h1>
+    <h3>Choose your starter below : </h3>
+    <ul>
+        <select id="list" onchange="getGen();">
+            <option disabled hidden selected>Choose Gen</option>
+            <option value="GEN1">Generation 1</option>
+            <option value="GEN2">Generation 2</option>
+            <option value="GEN3">Generation 3</option>
+        </select>
+    </ul>
+    <h4>Choices</h4>
+    <script src="/logic.js">getGen()</script>
+
+</body>
+
+</html>
